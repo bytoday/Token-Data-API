@@ -51,7 +51,7 @@ const setupWeb3 = async () => {
 const updateData = async (web3_collection) => {
   schedule.scheduleJob("0,15,30,45,59 * * * * *", async () => {
     getProjectOneData(web3_collection);
-    // getProjectTwoData(web3_collection);
+    getProjectTwoData(web3_collection);
   });
 };
 
